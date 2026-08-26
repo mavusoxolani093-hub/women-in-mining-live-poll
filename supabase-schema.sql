@@ -29,7 +29,7 @@ create policy "Anyone can view live poll responses"
 on public.poll_responses
 for select
 to anon
-using (poll_id = 'women-in-mining-keynote-2026');
+using (poll_id in ('women-in-mining-keynote-2026', 'women-in-mining-keynote-qa'));
 
 do $$
 begin
