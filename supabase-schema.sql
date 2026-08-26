@@ -16,7 +16,7 @@ on public.poll_responses
 for insert
 to anon
 with check (
-  poll_id = 'women-in-mining-keynote-2026'
+  poll_id in ('women-in-mining-keynote-2026', 'women-in-mining-keynote-qa')
   and (
     (question_id = '1' and answer in ('Mbokodo', 'Egg', 'Marshmallow', 'Air bubble'))
     or (question_id = '2' and answer in ('Yes', 'No'))
